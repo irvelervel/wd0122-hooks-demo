@@ -67,6 +67,7 @@ const UseStateComponent = () => {
         <p
           onClick={() =>
             setPerson({
+              // these setter functions ASSIGN new values, they don't merge an object like this.setState
               name: 'Simon',
               age: 19,
             })
